@@ -1,0 +1,18 @@
+第一周
+1、安装并熟悉环境
+2、完成文件打开功能
+3、添加树状控件
+第二周
+1、树状方案修改，目前已经基于matlab07的uitree函数加入
+uitree由于较为古老，目前help中没有，具体信息到
+%your matlab path%\toolbox\matlab\uitools\uitree.m中查看，注释即为帮助
+
+2、调整控件位置，目前还在左下角…
+3、完成pushbutton_OpenBusDef_Callback函数
+具体功能：
+	a.通过存储模型路径的'sim_file' （'sfunc_file'暂时不管）打开模型文件，
+	b.解析模型输入（功能类似origin_sample里的getModelBusName函数，可另创一个.m函数文件重写）
+4、针对list控件的双击事件进行响应
+即点击哪个输入，就在右侧树状控件中解析出细节
+
+5、实现功能：双击元信号后，在下方能够显示其6项具体信息（例'AdsOnCmd', 1, 'int8', -1, 'real', 'Sample'），文档中有每项的意义。
